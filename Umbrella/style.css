@@ -139,5 +139,5 @@ margin-right: 25px;
 }
 
 .loading-overlay img {
-    animation: rotate 5s linear infinite; /* Apply animation to rotate loader */
+    animation: rotate 5s linear infinite;
 }
