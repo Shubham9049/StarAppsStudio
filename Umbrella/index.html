@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="conatainer">
+            <div class="box-1">
+                <img id="umbrella" src="./Asserts/Blue umbrella.png" alt="error image ">
+            </div>
+            <div class="box-2">
+                <h2>Custom umbrella</h2>
+                <div class="color-picker">
+                    <div class="color" style="background-color: #FF5733;" onclick="changeColor('#FF5733')"></div>
+                    <div class="color" style="background-color: #FFC300;" onclick="changeColor('#FFC300')"></div>
+                    <div class="color" style="background-color: #FFFF66;" onclick="changeColor('#FFFF66')"></div>
+                    <div class="color" style="background-color: #66FF66;" onclick="changeColor('#66FF66')"></div>
+                    <div class="color" style="background-color: #66FFFF;" onclick="changeColor('#66FFFF')"></div>
+                    <div class="color" style="background-color: #3366FF;" onclick="changeColor('#3366FF')"></div>
+                    <div class="color" style="background-color: #FF66FF;" onclick="changeColor('#FF66FF')"></div>
+                    <div class="color" style="background-color: #C0C0C0;" onclick="changeColor('#C0C0C0')"></div>
+                </div>
+                <h3>Customize your umbrella</h3>
+                <p>Upload a logo for an instant preview </p>
+                <p>.png and .jpg files only.Max file size is 5MB</p>
+                <div class="upload-logo">
+                    <label for="logo-input" class="logo-input">
+                        <img src="./Asserts/upload_icon.svg" alt="Upload Icon">
+                       <span id="File_name"> upload_icon</span>
+                    </label>
+                    <input type="file" id="logo-input" accept="image/*" onchange="handleLogoChange(event)">
+                    <span id="selected-file-name"></span>
+                    <button class="remove-logo" onclick="removeLogo()">X</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="loading" class="loading-overlay">
+        <img src="./Asserts/loader_icon.svg" alt="Loading...">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
